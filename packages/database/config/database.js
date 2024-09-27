@@ -5,7 +5,7 @@ module.exports = {
             database: "yourgpt",
             username: "root",
             password: "12345678",
-            port: 3306,
+            port: "3306",
             dialect: 'mysql',
             dialectOptions: {
                 bigNumberStrings: true
