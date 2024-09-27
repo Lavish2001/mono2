@@ -1,15 +1,15 @@
 {
   "name": "monorepo",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "license": "MIT",
   "scripts": {},
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "@nx/js": "19.8.2",
     "nx": "19.8.2"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "dependencies": {}
 }
