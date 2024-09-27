@@ -1,7 +1,7 @@
 module.exports = {
     development: {
         mysql: {
-            host: "192.168.18.81",
+            host: "localhost",
             database: "yourgpt",
             username: "root",
             password: "12345678",
@@ -20,11 +20,11 @@ module.exports = {
     },
     test: {
         mysql: {
-            host: "192.168.18.81",
+            host: "localhost",
             database: "yourgpt",
             username: "root",
             password: "12345678",
-            port: 3306,
+            port: "3306",
             dialect: 'mysql',
             dialectOptions: {
                 bigNumberStrings: true
@@ -38,11 +38,11 @@ module.exports = {
         }    },
     production: {
         mysql: {
-            host: "192.168.18.81",
+            host: "localhost",
             database: "yourgpt",
             username: "root",
             password: "12345678",
-            port: 3306,
+            port: "3306",
             dialect: 'mysql',
             dialectOptions: {
                 bigNumberStrings: true
