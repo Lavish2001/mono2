@@ -1,62 +1,57 @@
-require('dotenv').config();
-
-const env = (key, defaultValue = undefined) => process.env[key] || defaultValue;
-
 module.exports = {
     development: {
         mysql: {
-            host: env("MYSQL_HOSTNAME", "localhost"),
-            database: env("MYSQL_DATABASE", ""),
-            username: env("MYSQL_USERNAME", ""),
-            password: env("MYSQL_PASSWORD", ""),
-            port: env("MYSQL_PORT", ""),
+            host: "192.168.18.81",
+            database: "yourgpt",
+            username: "root",
+            password: "12345678",
+            port: 3306,
             dialect: 'mysql',
             dialectOptions: {
                 bigNumberStrings: true
             }
         },
         mongodb: {
-            url: env("MONGODB_DATABASE_URI", ""),
+            url: "yourgpt-dev-user",
             options: {
-                dbName: env("MONGODB_DATABASE", "")
+                dbName: "mongodb+srv://yourgpt-dev-user:viMP6yHVWP6eZquU@yourgpt-dev.obc2jbs.mongodb.net/?retryWrites=true&w=majority"
             }
         }
     },
     test: {
         mysql: {
-            host: env("MYSQL_HOSTNAME", "localhost"),
-            database: env("MYSQL_DATABASE", ""),
-            username: env("MYSQL_USERNAME", ""),
-            password: env("MYSQL_PASSWORD", ""),
-            port: env("MYSQL_PORT", ""),
+            host: "192.168.18.81",
+            database: "yourgpt",
+            username: "root",
+            password: "12345678",
+            port: 3306,
             dialect: 'mysql',
             dialectOptions: {
                 bigNumberStrings: true
             }
         },
         mongodb: {
-            url: env("MONGODB_DATABASE_URI", ""),
+            url: "yourgpt-dev-user",
             options: {
-                dbName: env("MONGODB_DATABASE", "")
+                dbName: "mongodb+srv://yourgpt-dev-user:viMP6yHVWP6eZquU@yourgpt-dev.obc2jbs.mongodb.net/?retryWrites=true&w=majority"
             }
-        }
-    },
+        }    },
     production: {
         mysql: {
-            host: env("MYSQL_HOSTNAME", "localhost"),
-            database: env("MYSQL_DATABASE", ""),
-            username: env("MYSQL_USERNAME", ""),
-            password: env("MYSQL_PASSWORD", ""),
-            port: env("MYSQL_PORT", ""),
+            host: "192.168.18.81",
+            database: "yourgpt",
+            username: "root",
+            password: "12345678",
+            port: 3306,
             dialect: 'mysql',
             dialectOptions: {
                 bigNumberStrings: true
             }
         },
         mongodb: {
-            url: env("MONGODB_DATABASE_URI", ""),
+            url: "yourgpt-dev-user",
             options: {
-                dbName: env("MONGODB_DATABASE", "")
+                dbName: "mongodb+srv://yourgpt-dev-user:viMP6yHVWP6eZquU@yourgpt-dev.obc2jbs.mongodb.net/?retryWrites=true&w=majority"
             }
         }
     }
