@@ -3,7 +3,7 @@ const path = require('path');
 const Mongoose = require('mongoose');
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
-const config = require(__dirname + '/../../../config/database.js')[env]["mongodb"];
+const config = require(__dirname + '/../../config/database.js')[env]["mongodb"];
 
 if (config.url) {
   Mongoose.connect(config.url, config.options);
