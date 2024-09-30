@@ -1,9 +1,8 @@
 {
   "name": "monorepo",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "license": "MIT",
   "scripts": {},
-  "private": true,
   "workspaces": [
     "packages/*"
   ],
@@ -11,5 +10,8 @@
     "@nx/js": "19.8.2",
     "nx": "19.8.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "db-sequelize": "*",
+    "db-models": "*"
+  }
 }

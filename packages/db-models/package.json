@@ -1,0 +1,10 @@
+{
+    "name": "db-models",
+    "version": "5.0.0",
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": {},
+    "private": true,
+    "dependencies": {}
+  }
+  
