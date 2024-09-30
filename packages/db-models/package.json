@@ -4,7 +4,6 @@
     "license": "MIT",
     "main": "index.js",
     "scripts": {},
-    "private": true,
     "dependencies": {
         "sequelize": "^6.37.3"
     }
