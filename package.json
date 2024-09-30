@@ -12,7 +12,6 @@
     "nx": "19.8.2"
   },
   "dependencies": {
-    "db-sequelize": "*",
     "db-models": "*"
   }
 }
